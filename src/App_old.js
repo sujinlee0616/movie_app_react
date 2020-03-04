@@ -24,7 +24,7 @@ import PropTypes from "prop-types";
 function Food({name, picture, rating}){
   return (
     <div>
-      <h2>I like {name}</h2> 
+      <h2>I like {name}</h2>    
       <h4>{rating}/5.0</h4>
       <img src={picture} alt={name} />
     </div>
@@ -37,6 +37,7 @@ Food.propTypes = {
   picture: PropTypes.string.isRequired,
   rating: PropTypes.number
 };
+// propTypes: 컴포넌트의 prop의 타입을 확인. 올바르지 않은 타입이 들어오면 콘솔에 경고문 떠서 알 수 있다. 
 
 // #2-2 Dynamic Component Geneeration, #2-3 .map Recap
 const foodILike=[
